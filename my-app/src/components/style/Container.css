@@ -1,0 +1,96 @@
+
+:root {
+    --backroundColor : #F9FAFB;
+    --textColor : #25343F ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container { 
+    display: flex;
+    min-height: calc(100vh - 100px);
+    align-items: center;
+}
+
+
+.container-kiri {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+}
+
+.container-kiri ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container-kiri ul li a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 24px;
+}
+
+.container-tengah {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hello h1 {
+    font-size: 40px;
+}
+
+.introduction p {
+    width: 85%;
+}
+
+.btn-me button {
+    border-radius: 10px;
+    border: none;
+    background-color: var(--textColor);
+    color: #F9FAFB;
+    font-weight: bold;
+    padding: 12px 10px 12px 10px;
+    cursor: pointer;
+}
+
+.btn-cv {
+    margin-right: 5px;
+}
+
+.btn-me button:hover {
+    background-color: var(--backroundColor);
+    color: var(--textColor);
+    border: 1px solid #25343F;
+    transition: 0.3s;
+}
+
+.container-kanan {
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-picture {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    object-fit: cover;
+    object-position: center bottom;
+}
