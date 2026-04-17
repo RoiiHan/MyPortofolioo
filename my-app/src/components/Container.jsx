@@ -1,6 +1,7 @@
 import React from 'react'
 import '../components/style/Container.css'
-import Foto from '../assets/Potoku.png'
+import Foto from '../assets/Fotoku13131.png'
+import CV from '../assets/CV_RoihanTauhid.pdf'
 
 function Container() {
   return (
@@ -20,7 +21,9 @@ function Container() {
                 </div>
                 <p>I’m a Front End Developer who enjoys building clean and simple web interfaces.I like turning ideas into experiences that feel natural and easy to use</p>
                 <div className="btn-me">
-                    <button className="btn-cv">Download CV</button>
+                    <a href={CV} download="CV-RoihanTauhid.pdf">
+                        <button className="btn-cv">Download CV</button>
+                    </a>
                     <button className="btn-contact">Contact Me</button>
                 </div>
             </div>

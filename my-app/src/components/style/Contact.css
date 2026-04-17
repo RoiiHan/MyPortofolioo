@@ -98,3 +98,20 @@ input , textarea , button{
 textarea{
     height: 200px;
 }
+
+.status-success {
+  color: #25D366;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.status-error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

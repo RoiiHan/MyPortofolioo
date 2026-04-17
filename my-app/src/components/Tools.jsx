@@ -16,7 +16,6 @@ function Tools() {
                     <button className="tailwind"><span><img src={TailwindCssLogo} alt="Tailwind CSS Logo"/> Tailwind</span></button>
                     <button><span><i className="fa-brands fa-react"></i> ReactJS</span></button>
                     <button><span><i className="fa-brands fa-python"></i> Python</span></button>
-                    <button><span><i className="fa-brands fa-github"></i> Github</span></button>
                 </div>
             </div>
   )

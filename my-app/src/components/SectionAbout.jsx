@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/SectionAbout.css'
-import Foto from '../assets/Potoku2.png'
+import Foto from '../assets/Fotoku13131.png'
 
 
 function SectionAbout() {
