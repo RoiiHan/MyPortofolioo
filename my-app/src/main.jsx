@@ -1,9 +1,28 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
+import ReactDom from 'react-dom/client'
+import { RouterProvider } from "react-router/dom";
+import { createBrowserRouter } from "react-router";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Beranda from "./pages/Beranda";
+import About from "./pages/About";
+import Project from './pages/Project';
+import Contact from './pages/Contact';
+
+const rootElement = document.getElementById("root");
+const root = ReactDom.createRoot(rootElement);
+
+const router = createBrowserRouter([
+  { path: "/",
+    Component: Beranda 
+  },
+  { path: "/about",
+    Component: About
+  },
+  { path: "/project",
+    Component: Project
+  },
+  { path: "/contact",
+    Component: Contact
+  }
+]);
+
+root.render(<RouterProvider router={router} />);

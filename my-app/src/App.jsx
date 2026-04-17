@@ -1,14 +1,10 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Beranda from "./pages/Beranda";
 
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Beranda />} />
-      </Routes>
-    </BrowserRouter>
-  );
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
-export default App;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

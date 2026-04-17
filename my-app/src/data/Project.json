@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Streaming Website Chill",
+        "description" : "The newest and most complete film streaming website",
+        "tools" : ["HTML", "CSS", "JavaScript"],
+        "image" : "/project1-chill.png"
+    },
+    {
+        "id": 2,
+        "title": "TodoList Website",
+        "description" : "Todo list Website for time management and daily activities",
+        "tools" : ["HTML", "CSS", "JavaScript"],
+        "image" : "/Project2-TodoList.png"
+    },
+    {
+        "id": 3,
+        "title": "Analisis Sentiment Website",
+        "description" : "A website for analyzing sentiment in text data",
+        "tools" : ["HTML", "CSS","Python","Django"],
+        "image" : "/Project3-AnalisisSentiment.png"
+    },
+    {
+        "id": 4,
+        "title": "Company Profile ",
+        "description" : "A website for showcasing company information and services",
+        "tools" : ["HTML", "TailwindCSS","JavaScript"],
+        "image" : "/Project4-CompanyProfile.png"
+    },
+    {
+        "id": 5,
+        "title": "-",
+        "description" : "-",
+        "tools" : ["-"],
+        "image" : "/Frame 2.png"
+    },
+    {
+        "id": 6,
+        "title": "-",
+        "description" : "-",
+        "tools" : ["-"],
+        "image" : "/Frame 2.png"
+    }
+]
