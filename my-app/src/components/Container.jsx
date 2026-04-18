@@ -2,6 +2,7 @@ import React from 'react'
 import '../components/style/Container.css'
 import Foto from '../assets/Fotoku13131.png'
 import CV from '../assets/CV_RoihanTauhid.pdf'
+import { Link } from 'react-router'
 
 function Container() {
   return (
@@ -24,7 +25,9 @@ function Container() {
                     <a href={CV} download="CV-RoihanTauhid.pdf">
                         <button className="btn-cv">Download CV</button>
                     </a>
-                    <button className="btn-contact">Contact Me</button>
+                    <Link to="/contactMe">
+                        <button className="btn-contact">Contact Me</button>
+                    </Link>
                 </div>
             </div>
         </div>
