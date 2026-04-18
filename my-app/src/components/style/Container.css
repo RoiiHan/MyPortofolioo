@@ -1,4 +1,3 @@
-
 :root {
     --backroundColor : #F9FAFB;
     --textColor : #25343F ;
@@ -15,7 +14,6 @@
     min-height: calc(100vh - 100px);
     align-items: center;
 }
-
 
 .container-kiri {
     display: flex;
@@ -96,41 +94,37 @@
     border-radius: 100%;
 }
 
+/* ===== MOBILE ===== */
 @media (max-width: 480px) {
 
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
+        display: flex;
+        flex-direction: column;
         min-height: unset;
-        align-items: start;        /* ✅ ubah dari center ke start */
-        align-content: start;
+        align-items: center;
         padding: 20px;
     }
 
-    /* Baris 1 kiri - container-tengah */
+    .container-kanan {
+        order: 1;
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        justify-content: center;
+    }
+
     .container-tengah {
-        grid-column: 1;
-        grid-row: 1;
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-kiri {
+        order: 3;
         width: 100%;
         justify-content: flex-start;
-    }
-
-    /* Baris 1 kanan - container-kanan */
-    .container-kanan {
-        grid-column: 2;
-        grid-row: 1;
-        width: 100%;
-        height: 40vh;
-    }
-
-    /* Baris 2 full - container-kiri */
-    .container-kiri {
-        grid-column: 1 / 3;
-        grid-row: 2;
-        width: 100%;
-        justify-content: left;
-        padding: 15px 0;
+        padding: 10px 0 0 5px;
     }
 
     .container-kiri ul {
@@ -142,8 +136,21 @@
         font-size: 20px;
     }
 
+    .my-picture {
+        max-width: 180px;
+    }
+
+    .hello {
+        margin-top: 10px;
+    }
+
     .hello h1 {
         font-size: 16px;
+    }
+
+    .introduction {
+        align-items: center;
+        text-align: center;
     }
 
     .introduction p {
@@ -152,77 +159,90 @@
         text-align: justify;
     }
 
-    .my-picture {
-        max-width: 180px;
+    .hello p {
+        text-align: center;
     }
 
     .btn-me {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 8px;
+        align-self: flex-start;
     }
 
+    .btn-me a {
+        display: block;
+    }
+
+    .btn-me a button,
     .btn-me button {
-    width: 100px;
-    padding: 7px 7px 7px 7px;
-    cursor: pointer;
-    font-size: 10px;
+        width: 100px;
+        height: 34px;
+        padding: 0;
+        cursor: pointer;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
     }
 
     .btn-cv {
-    margin-bottom: 5px;
+        margin: 0;
     }
 
     .btn-contact {
-        width: 100px;
+        margin: 0;
     }
 }
 
+/* ===== TABLET ===== */
 @media (min-width: 481px) and (max-width: 768px) {
 
-.container-kiri {
-    width: 15%;
-}
+    .container-kiri {
+        width: 15%;
+    }
 
-.container-kiri ul {
-    gap: 12px;
-}
+    .container-kiri ul {
+        gap: 12px;
+    }
 
-.container-kiri ul li a {
-    font-size: 16px;
-}
+    .container-kiri ul li a {
+        font-size: 16px;
+    }
 
-.container-tengah {
-    width: 45%;
-}
+    .container-tengah {
+        width: 45%;
+    }
 
-.introduction {
-    gap: 15px;
-}
+    .introduction {
+        gap: 15px;
+    }
 
-.hello h1 {
-    font-size: 25px;
-}
+    .hello h1 {
+        font-size: 25px;
+    }
 
-.introduction p {
-    width: 90%;
-    font-size: 14px;
-    text-align: justify;
-}
+    .introduction p {
+        width: 90%;
+        font-size: 14px;
+        text-align: justify;
+    }
 
-.btn-me button {
-    padding: 10px 8px 10px 8px;
-    cursor: pointer;
-    font-size: 10px;
-}
+    .btn-me button {
+        padding: 10px 8px;
+        cursor: pointer;
+        font-size: 10px;
+    }
 
-.btn-cv {
-    margin-right: 8px;
-}
+    .btn-cv {
+        margin-right: 8px;
+    }
 
-.my-picture {
-    width: 100%;
-    height: 90%;
-    border-radius: 100%;
-    object-position: center top;
-}
+    .my-picture {
+        width: 100%;
+        height: 90%;
+        border-radius: 100%;
+        object-position: center top;
+    }
 }
