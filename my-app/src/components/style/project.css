@@ -96,3 +96,90 @@ body {
     box-shadow: 0 24px 48px #25343F;
     border: 1px solid var(--textColor);
 }
+
+@media (max-width: 480px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-title {
+        width: 90%;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .tools button {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-title {
+        width: 90%;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .tools button {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card-title {
+        width: 90%;
+    }
+
+    .tools {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 10px;
+    }
+
+    .tools button {
+        margin-left: 0;
+    }
+}

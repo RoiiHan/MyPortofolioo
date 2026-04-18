@@ -115,3 +115,61 @@ button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+
+    .container-contact {
+        flex-direction: column;
+        max-height: unset;
+        padding: 20px;
+    }
+
+    /* Form naik ke atas */
+    .container-form {
+        order: -1;
+        width: 100%;
+    }
+
+    .container-form h3 {
+        margin-top: 10px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    /* Info turun ke bawah */
+    .container-info {
+        order: 1;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-contact {
+        flex-direction: column;
+        max-height: unset;
+        padding: 30px;
+    }
+
+    .container-form {
+        order: -1;
+        width: 100%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .container-info {
+        order: 1;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+}

@@ -92,7 +92,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .about-picture img{
@@ -102,4 +101,107 @@ body {
     object-fit: contain;
     object-position: center bottom;
     border-radius: 100%;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+
+    .container-contents {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* Foto naik ke atas dengan order */
+    .about-picture {
+        order: -1;
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 20px;
+    }
+
+    .about-picture img {
+        max-width: 200px;
+        height: 100%;
+        object-position: center top;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-title {
+        align-items: center;
+    }
+    .about-me-title {
+        font-size: 2rem;
+    }
+
+    .about-contents {
+        width: 100%;
+        font-size: 13px;
+    }
+    
+    .profile-me{
+    display: none;
+    }
+
+    .content-ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    .container-contents {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-picture {
+        order: -1;
+        width: 100%;
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+
+    .about-picture img {
+        max-width: 250px;
+    }
+
+    .about {
+        width: 100%;
+        padding: 0;
+    }
+
+    .profile-me {
+        display: none;
+    }
+
+    .profile-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-title{
+        text-align: center;
+    }
+
+    .about-me-title {
+        font-size: 2.5rem;
+    }
+
+    .about-contents {
+        width: 100%;
+    }
 }
