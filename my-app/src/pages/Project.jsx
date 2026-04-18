@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/navbar'
 import SectionProject from '../components/SectionProject'
 import Contact from '../components/ComponentContact'
 import FloatingWA from '../components/FloatingWA'
