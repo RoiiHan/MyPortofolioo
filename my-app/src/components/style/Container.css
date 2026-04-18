@@ -145,7 +145,7 @@
     }
 
     .hello h1 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .introduction {
@@ -155,7 +155,7 @@
 
     .introduction p {
         width: 95%;
-        font-size: 12px;
+        font-size: 18px;
         text-align: justify;
     }
 
@@ -194,6 +194,10 @@
     .btn-contact {
         margin: 0;
     }
+    
+    .my-picture {
+    object-position: center top;
+}
 }
 
 /* ===== TABLET ===== */
