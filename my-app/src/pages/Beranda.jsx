@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router'
-import Navbar from '../components/Navbar';
+import Navbar from '../components/navbar';
 import Container from '../components/Container';
 import FloatingWA from '../components/FloatingWA';
 
